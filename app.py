@@ -98,8 +98,21 @@ meta_cs = meta_df[meta_df["Occupation (O*NET-SOC Title)"].isin(cs_jobs)]
 
 
 # ============================================================
-# 4. SIDEBAR BỘ LỌC
+# 4. SIDEBAR: THÔNG TIN SINH VIÊN + BỘ LỌC
 # ============================================================
+
+st.sidebar.image("images/logo.webp", width=120)
+
+st.sidebar.markdown("""
+### Thông tin bài làm
+
+**Môn học:** Trực quan hóa dữ liệu  
+**Họ và tên:** Phan Hoàng Phúc  
+**Mã số sinh viên:** 030239230190  
+**Lớp:** T5C-DV  
+""")
+
+st.sidebar.divider()
 
 st.sidebar.header("Bộ lọc phân tích")
 
