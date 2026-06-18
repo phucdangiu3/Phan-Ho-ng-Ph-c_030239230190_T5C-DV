@@ -1,0 +1,63 @@
+# AI Agent JobFit Lab
+
+## Bản đồ lựa chọn nhiệm vụ phù hợp để giao cho AI Agent trong ngành Khoa học máy tính
+
+## 1. Giới thiệu
+
+**AI Agent JobFit Lab** là dashboard trực quan hóa dữ liệu nhằm phân tích mức độ phù hợp của các nhiệm vụ trong lĩnh vực Khoa học máy tính khi ứng dụng AI Agent.
+
+Dự án tập trung trả lời câu hỏi:
+
+> Nhiệm vụ nào nên ưu tiên giao cho AI Agent, nhiệm vụ nào chỉ nên để AI hỗ trợ, và nhiệm vụ nào vẫn cần con người kiểm soát?
+
+Dashboard được xây dựng bằng **Python, Streamlit, Pandas và Plotly**.
+
+---
+
+## 2. Mục tiêu dự án
+
+- Phân tích các nhóm nghề thuộc lĩnh vực Khoa học máy tính.
+- Xây dựng điểm đánh giá **JobFit Score** cho từng nhóm nghề và từng nhiệm vụ.
+- Trực quan hóa khả năng tự động hóa, mong muốn tự động hóa và mức độ cần con người tham gia.
+- Đề xuất nhóm nhiệm vụ phù hợp để ứng dụng AI Agent.
+- Hỗ trợ ra quyết định triển khai AI Agent theo hướng có kiểm soát.
+
+---
+
+## 3. Bộ dữ liệu sử dụng
+
+Dự án sử dụng 4 file CSV:
+
+| File dữ liệu | Vai trò |
+|---|---|
+| `task_statement_with_metadata.csv` | Chứa thông tin nhiệm vụ nghề nghiệp |
+| `expert_rated_technological_capability.csv` | Chứa đánh giá của chuyên gia về khả năng tự động hóa |
+| `domain_worker_desires.csv` | Chứa mong muốn tự động hóa từ người lao động |
+| `domain_worker_metadata.csv` | Chứa thông tin về mức độ sử dụng LLM/AI |
+
+---
+
+## 4. Công nghệ sử dụng
+
+- Python
+- Streamlit
+- Pandas
+- Plotly Express
+- GitHub
+
+---
+
+## 5. Cấu trúc thư mục
+
+```text
+AI-Agent-JobFit-Lab/
+│
+├── app.py
+├── README.md
+├── requirements.txt
+├── .gitignore
+└── data/
+    ├── domain_worker_desires.csv
+    ├── domain_worker_metadata.csv
+    ├── expert_rated_technological_capability.csv
+    └── task_statement_with_metadata.csv
